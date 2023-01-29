@@ -1,6 +1,5 @@
 //JSON WEB TOKEN AUTHENTICATOR.
 
-
 import jwt from "jsonwebtoken"
 
 const privateKey = "caesar"

@@ -1,1 +1,32 @@
-[]
+[
+    {
+        "title": "Product ffit",
+        "author": "Meraj Faheem",
+        "coverImageUrl": "https://code.in",
+        "publisher": "EdVenture Park",
+        "synopsis": "This is a Very Great Book",
+        "pageCount": 225,
+        "isbn": "1234-HNI-87",
+        "book_id": "3a2b5713-4409-4d37-9b44-96dd57954c36"
+    },
+    {
+        "title": "Product fit",
+        "author": "Meraj Faheem",
+        "coverImageUrl": "https://code.in",
+        "publisher": "EdVenture Park",
+        "synopsis": "This is a Very Great Book",
+        "pageCount": 225,
+        "isbn": "1234-HNI-87",
+        "book_id": "e0224d47-bbf3-4701-bfee-f788f881e975"
+    },
+    {
+        "title": "Product it",
+        "author": "Meraj Faheem",
+        "coverImageUrl": "https://code.in",
+        "publisher": "EdVenture Park",
+        "synopsis": "This is a Very Great Book",
+        "pageCount": 225,
+        "isbn": "1234-HNI-87",
+        "book_id": "1aaf9bab-6eec-4a7a-b9a3-b58daa7689b4"
+    }
+]

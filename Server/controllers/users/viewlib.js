@@ -1,10 +1,21 @@
 import express from "express"
+import fs from "fs/promises"
+import authMiddleWare from "../../middleware/auth/index.js"
 
 const viewLibRouter = express.Router()
 
+viewLibRouter.get("/",authMiddleWare,async (req,res)=>{
+    
+    try {
+        let booklist = await fs.readFile("library.json")
+        booklist = JSON.parse(booklist)
+        res.status(200).json(booklist)
 
-viewLibRouter.get("/",(req,res)=>{
-res.send("VIEW LIB ROUTE HIT.")
+    } catch (error) {
+        console.log(error)
+        res.status(500).json({"message":"internal server error"})
+        
+    }
 })
 
 

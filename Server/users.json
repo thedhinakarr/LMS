@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "fullName": "Dhinakar R",
+        "UserName": "theDhinakarr",
+        "email": "dhinakar210902@gmail.com",
+        "password": "$2b$12$7T63UZV2XIALh.8h61hd5OoQqobz1doqiKQFZFTO6tCss5/zHF2ne",
+        "role": "admin"
+    },
+    {
+        "fullName": "Preethi",
+        "UserName": "pitty",
+        "email": "preethi@gmail.com",
+        "password": "$2b$12$SNtqVzhjPliDdTFkT0PBhOL04IstuC6VwI.C0IwK0v5jmDfg9vjiK",
+        "role": "user"
+    }
+]
