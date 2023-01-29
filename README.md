@@ -1,2 +1,4 @@
-# LMS
-library management system
+# Library
+
+A very generic library management system...
+
