@@ -1,16 +1,18 @@
 [
     {
+        "user_id": " 34YHrqD49",
         "fullName": "Dhinakar R",
-        "UserName": "theDhinakarr",
+        "UserName": "thedhinakarr",
         "email": "dhinakar210902@gmail.com",
-        "password": "$2b$12$7T63UZV2XIALh.8h61hd5OoQqobz1doqiKQFZFTO6tCss5/zHF2ne",
+        "password": "$2b$12$sGqT2xcm/cGUrPDQtsoKeOVvotb2PhYwpWU.AvTF8uapCKdPDpY7W",
         "role": "admin"
     },
     {
+        "user_id": " xOEzPt7WK",
         "fullName": "Preethi",
-        "UserName": "pitty",
-        "email": "preethi@gmail.com",
-        "password": "$2b$12$SNtqVzhjPliDdTFkT0PBhOL04IstuC6VwI.C0IwK0v5jmDfg9vjiK",
-        "role": "user"
+        "UserName": "pitty_preethi",
+        "email": "p@gmail.com",
+        "password": "$2b$12$DYH1fhZBQUGcZ1e3W26e9.wa0tU3raTbjyhVWhx3UAtiIXL74sT12",
+        "role": "admin"
     }
 ]

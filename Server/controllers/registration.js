@@ -1,6 +1,7 @@
 import express from "express"
 import fs from "fs/promises"
 import bcrypt from "bcrypt"
+import randomStringGenerator from "../utils/index.js"
 
 import { userRegistrationValidation,errorMiddleWare } from "../middleware/validations/index.js"
 
@@ -24,8 +25,9 @@ registrationRouter.post("/",userRegistrationValidation(),errorMiddleWare,async (
         }
 
         password = await bcrypt.hash(password,12);
+        let user_id = randomStringGenerator(9)
 
-        let finalNewUser = {fullName,UserName,email,password,role}
+        let finalNewUser = {user_id,fullName,UserName,email,password,role}
 
         fileData.push(finalNewUser)
 
