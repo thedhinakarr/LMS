@@ -13,9 +13,9 @@ addBooksRouter.post("/", authMiddleWare , async (req,res)=>{
     }
 
     let booklist = await fs.readFile("library.json")
-    booklist = JSON.parse(booklist)
 
-    let foundBook = booklist.find(ele=> ((ele.title == req.body.title)&&(ele.author==req.body.author)))
+    booklist = JSON.parse(booklist)
+    let foundBook = booklist.find(ele=> ((ele.isbn == req.body.isbn)))
 
     console.log(foundBook)
 
@@ -25,13 +25,13 @@ addBooksRouter.post("/", authMiddleWare , async (req,res)=>{
 
     let {title , author, coverImageUrl, publisher, synopsis, pageCount, isbn} = req.body
 
-    let book_id = uuidv4()
-    let new_book = {title,author,coverImageUrl,publisher,synopsis,pageCount,isbn,book_id}
+    let id= uuidv4()
+    let new_book = {title,author,coverImageUrl,publisher,synopsis,pageCount,isbn,id}
     booklist.push(new_book)
 
     await fs.writeFile("library.json",JSON.stringify(booklist))
 
-    res.status(200).json({"message":"book successfully added","book_id":`${book_id}`})
+    res.status(200).json({"message":"book successfully added","id":`${id}`})
 
    } catch (error) {
     console.log(error);

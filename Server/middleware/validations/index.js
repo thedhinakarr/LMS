@@ -4,7 +4,7 @@ import { body, validationResult } from "express-validator"
 function userRegistrationValidation() {
     return [
         body(`fullName`, `Full name is required`).notEmpty().isLength({ min: 3 }),
-        body(`UserName`, `User name is required`).notEmpty().isLength({ min: 3 }),
+        body(`userName`, `User name is required`).notEmpty().isLength({ min: 3 }),
         body(`email`, `Email is required`).isEmail(),
         body(`password`, `Password must be strong`).isStrongPassword(),
         body('password2').custom((value, { req }) => {

@@ -1,0 +1,47 @@
+ <div className="flex justify-center w-screen h-screen px-4 text-gray-700">
+            <div className="flex w-full max-w-screen-lg">
+
+                <div className="flex flex-col flex-grow border-l border-r border-gray-300">
+
+                    <div className="flex justify-between flex-shrink-0 px-8 py-4 border-b border-gray-300">
+                        <h1 className=" text-white text-xl font-semibold">Library</h1>
+                    </div>
+
+                    <div className="text-white flex-grow h-0 overflow-auto">
+
+                        <div className="flex w-full p-8 border-b border-gray-300">
+
+                            <span className="flex-shrink-0 w-24 h-24 bg-gray-400 rounded-full" >
+                                <img className="object-fill w-24 " src={book.coverImageUrl} />
+                            </span>
+
+                            <div className="flex flex-col flex-grow ml-4">
+
+                                <div className="grid ">
+                                    <span className="font-semibold">Title: <text className="text-green-500">{book.title}t</text></span>
+                                    <span className="font-semibold">Author: <text className="text-green-500">{book.author}</text> </span>
+
+                                </div>
+
+                                <p className="mt-3" >
+                                    {book.synopsis}
+                                    <a className="underline" href="#">
+                                    </a>
+                                </p>
+
+                                <div className=" flex">
+                                    <div className=" mt-4 text-sm font-semibold">Publisher: <text className="text-green-500">{book.publisher}</text></div>
+                                    <div className="ml-2 mt-4 text-sm font-semibold">ISBN: <text className="text-green-500">GST_09098</text></div>
+                                    <div className="ml-2 mt-4 text-sm font-semibold">book_id:  <text className="text-green-500">{book.id}</text></div>
+                                    <div className="ml-2 mt-4 text-sm font-semibold">PageCount: <text className="text-green-500">{book.pageCount}</text></div>
+                                    <br /><br />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+

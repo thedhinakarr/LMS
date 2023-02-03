@@ -4,7 +4,7 @@ import authMiddleWare from "../../middleware/auth/index.js"
 
 const viewLibRouter = express.Router()
 
-viewLibRouter.get("/",authMiddleWare,async (req,res)=>{
+viewLibRouter.get("/",async (req,res)=>{
     
     try {
         let booklist = await fs.readFile("library.json")

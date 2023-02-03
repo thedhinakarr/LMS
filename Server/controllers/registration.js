@@ -9,6 +9,7 @@ const registrationRouter = express.Router()
 
 registrationRouter.post("/",userRegistrationValidation(),errorMiddleWare,async (req,res)=>{
     try {
+        console.log("Register hit");
         let {fullName, UserName, email, password ,role} = req.body;
 
         let fileData = await fs.readFile("users.json")
